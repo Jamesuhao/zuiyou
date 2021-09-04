@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingEnd="10dp"
+  android:paddingStart="10dp">
+
+  <TextView
+    android:id="@+id/topic_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:maxWidth="100dp"
+    android:textColor="#4FA9F5"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    tools:ignore="HardcodedText"
+    tools:text="我的话题" />
+
+  <TextView
+    android:id="@+id/topic_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="5dp"
+    android:layout_toEndOf="@+id/topic_name"
+    android:layout_toStartOf="@+id/entry"
+    android:ellipsize="end"
+    android:gravity="end"
+    android:maxLines="1"
+    android:textColor="#ACABB0"
+    android:textSize="12sp"
+    tools:ignore="HardcodedText"
+    tools:text="话题管理" />
+
+  <ImageView
+    android:id="@+id/entry"
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="10dp"
+    android:scaleType="fitCenter"
+    android:src="@mipmap/arrow"
+    tools:ignore="ContentDescription" />
+</RelativeLayout>

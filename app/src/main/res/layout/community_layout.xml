@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:id="@id/title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FDFFFA">
+
+    <TextView
+      android:id="@+id/title_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginEnd="60dp"
+      android:ellipsize="end"
+      android:gravity="center_horizontal"
+      android:maxLines="1"
+      android:text="社区"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      tools:ignore="HardcodedText" />
+
+    <ImageView
+      android:id="@+id/source"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="10dp"
+      android:scaleType="fitXY"
+      android:src="@mipmap/top_right_source"
+      tools:ignore="ContentDescription" />
+  </RelativeLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/community"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title" />
+</RelativeLayout>

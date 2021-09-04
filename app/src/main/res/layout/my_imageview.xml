@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="240dp">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/top"
+    tools:ignore="ContentDescription" />
+
+  <TextView
+    android:id="@+id/space"
+    android:layout_width="55dp"
+    android:layout_height="20dp"
+    android:layout_alignTop="@+id/set_icon"
+    android:layout_marginEnd="10dp"
+    android:layout_toStartOf="@+id/set_icon"
+    android:background="@drawable/my_space_shape"
+    android:gravity="center_vertical|end"
+    android:paddingEnd="10dp"
+    android:text="空间"
+    android:textColor="#FFFFFF"
+    android:textSize="12sp"
+    tools:ignore="HardcodedText,RtlSymmetry" />
+
+  <ImageView
+    android:id="@+id/start"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="70dp"
+    android:layout_marginTop="8dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/star"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/set_icon"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="15dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/icon"
+    tools:ignore="ContentDescription" />
+
+  <RelativeLayout
+    android:id="@+id/vip"
+    android:layout_width="95dp"
+    android:layout_height="30dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="100dp"
+    android:background="@drawable/my_top_image_member">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_toEndOf="@+id/icon"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:paddingEnd="5dp"
+      android:paddingStart="5dp"
+
+      android:text="最右会员................."
+      android:textColor="#FFFFFF"
+      android:textSize="12sp"
+      tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <ImageView
+      android:id="@+id/icon"
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="7dp"
+      android:scaleType="fitXY"
+      android:src="@mipmap/imperial_crown"
+      tools:ignore="ContentDescription" />
+  </RelativeLayout>
+
+  <ImageView
+    android:id="@+id/small"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/my_small_shape"
+    android:paddingBottom="5dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/small1"
+    tools:ignore="ContentDescription" />
+
+  <TextView
+    android:id="@+id/user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/small"
+    android:layout_below="@+id/small"
+    android:layout_marginEnd="40dp"
+    android:layout_marginTop="10dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    tools:text="X迪拜塔跳舞的老右p" />
+
+  <ImageView
+    android:id="@+id/sex"
+    android:layout_width="20dp"
+    android:layout_height="0dp"
+    android:layout_alignBottom="@+id/user_name"
+    android:layout_alignTop="@+id/user_name"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="-35dp"
+    android:layout_toEndOf="@+id/user_name"
+    android:src="@mipmap/sex_icon"
+    tools:ignore="ContentDescription" />
+
+  <TextView
+    android:id="@+id/sign"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/user_name"
+    android:layout_below="@+id/sex"
+    android:layout_marginEnd="40dp"
+    android:layout_marginTop="10dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:text="这家伙很懒，什么都没有写~"
+    android:textColor="#EAEFEE"
+    android:textSize="12sp"
+    tools:ignore="HardcodedText" />
+
+  <ImageView
+    android:layout_width="15dp"
+    android:layout_height="0dp"
+    android:layout_alignBottom="@+id/sign"
+    android:layout_alignTop="@+id/sign"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="-35dp"
+    android:layout_toEndOf="@+id/sign"
+    tools:ignore="ContentDescription"
+    android:src="@mipmap/pen" />
+
+  <include
+    android:id="@+id/praise"
+    layout="@layout/my_user_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/sign"
+    android:layout_below="@+id/sign"
+    android:layout_marginTop="10dp" />
+
+  <include
+    android:id="@+id/attention"
+    layout="@layout/my_user_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sign"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/praise" />
+
+  <include
+    android:id="@+id/fans"
+    layout="@layout/my_user_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sign"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/attention" />
+</RelativeLayout>

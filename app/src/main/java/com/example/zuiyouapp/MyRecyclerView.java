@@ -1,0 +1,32 @@
+package com.example.zuiyouapp;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class MyRecyclerView extends RecyclerView {
+
+  public MyRecyclerView(@NonNull Context context) {
+    this(context, null);
+  }
+
+  public MyRecyclerView(@NonNull Context context,
+      @Nullable AttributeSet attrs) {
+    this(context, attrs, 0);
+  }
+
+  public MyRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    super(context, attrs, defStyleAttr);
+  }
+
+  @Override
+  public boolean onTouchEvent(MotionEvent e) {
+    return super.onTouchEvent(e);
+  }
+
+
+}

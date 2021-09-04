@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:id="@+id/top_item"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="10dp"
+  android:background="@drawable/my_normal_shape"
+  android:columnCount="5"
+  android:orientation="horizontal"
+  android:rowCount="1">
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:padding="10dp">
+
+    <ImageView
+      android:id="@+id/icon1"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/invitation"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/icon_text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/icon1"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:text="帖子"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:padding="10dp">
+
+    <ImageView
+      android:id="@+id/icon2"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/comment"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/icon_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/icon2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:text="评论"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:padding="10dp">
+
+    <ImageView
+      android:id="@+id/icon3"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/file"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/icon_text3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/icon3"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:text="收藏"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:padding="10dp">
+
+    <ImageView
+      android:id="@+id/icon4"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/eye"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/icon_text4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/icon4"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:text="插眼"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:padding="10dp">
+
+    <ImageView
+      android:id="@+id/icon"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/praise"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/icon_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/icon"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:text="赞过"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+  </RelativeLayout>
+
+</GridLayout>
